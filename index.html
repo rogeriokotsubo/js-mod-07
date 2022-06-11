@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta property="og:description" content="Alpha Ed/tech - Módulo 07 - JavaScript - Parte 07" />
+    <meta property="og:url" content="https://rogeriokotsubo.github.io/js-mod-07/" />
+    <meta property="og:determiner" content="a" />
+    <meta property="og:locale" content="pt_BR" /> 
+    <title>JS - Modulo 07 - Parte 07</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav id="menu">
+          <a class="a-menu" href="./index.html">Exercício 1</a>
+          <a class="a-menu" href="./page2.html">Exercício 2</a>
+          <a class="a-menu" href="./page3.html">Exercício 3</a>
+      </nav>
+    </header>
+
+    <!-- CORPO DA PÁGINA -->
+    <main id="exercise1">
+      <section class="exercise">
+        <h1>Exercício 1</h1>
+        <br />
+        <p>Utilizando a mesma estrutura de 3 arquivos (HTML+CSS+JS):</p>
+        <p>Crie uma página web que possua um elemento HTML select que possa selecionar uma lista de carros esportivos, considerando:</p>
+        <ol> 
+          <li>Identificar a mudança de carro selecionado e alterar a imagem associada;</li>
+          <li>Exibir as informações referentes a este carro (dados do carro como nome, fabricante, velocidade máxima, 0-100km e outras informações que julgar pertinente);</li>        
+          <li>A página web deve ser bem construída visualmente.</li>        
+        </ol>
+        <div class="ctn-input">
+          <form id="frm-inputs"> 
+            <label for="cars">Escolha um carro:</label>
+            <select id="cars" required>
+              <option value="" disabled selected>Selecione...</option>
+              <option value="audi-rs6-avanti">Audi RS6 Avanti</option>
+              <option value="buggati-centodieti">Buggati Centodieti</option>
+              <option value="koenigsegg-gemera">Koenigsegg Gemera</option>
+              <option value="lotus-elise">Lotus Elise</option>
+              <option value="mclaren-765-lt">McLaren 765 LT</option>
+              <option value="mercedes-benz-gla">Mercedes Benz GLA</option>
+              <option value="pininfarina-battista">Pininfarina Battista</option>
+              <option value="porshe-911">Porshe 911</option>
+              <option value="porshe-cayene">Porshe Cayene</option>
+            </select>                    
+          </form>
+          <div id="ctn-card"> 
+            <h2 id="h2-card"></h2>          
+            <p id="p-card"></p>          
+            <img id="img-card">
+          </div>
+        </div>
+
+      </section>    
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+
+</html>

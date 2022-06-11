@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta property="og:description" content="Alpha Ed/tech - Módulo 07 - JavaScript - Parte 05" />
+    <meta property="og:url" content="https://rogeriokotsubo.github.io/js-mod-05/" />
+    <meta property="og:determiner" content="a" />
+    <meta property="og:locale" content="pt_BR" /> 
+    <title>JS - Modulo 07 - Parte 05</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav id="menu">
+          <a class="a-menu" href="./index.html">Exercício 1</a>
+          <a class="a-menu" href="./page2.html">Exercício 2</a>
+          <a class="a-menu" href="./page3.html">Exercício 3</a>
+      </nav>
+    </header>
+
+
+  <!-- CORPO DA PÁGINA -->
+    <main id="exercise3">
+      <section class="exercise">
+        <h1>Exercício 3</h1>
+        <br />
+        <p>Utilizando a mesma estrutura de 3 arquivos (HTML+CSS+JS):</p>
+        <p>Utilize a estrutura 'switch' e crie uma página web que contenha um formulário que possibilite:</p>
+        <ol> 
+          <li>O usuário selecionar um menu de opções ('HTML select') de produtos previamente 
+            cadastrados (mínimo 5 produtos);</li>
+          <li>Clicar em um botão ‘exibir’ que exibe a imagem do produto selecionado.</li>        
+        </ol>
+        <div class="ctn-input">
+          <form id="frm-inputs"> 
+            <span class="lbl-form">Pássaro</span>
+            <select id="id-passaro">
+              <option value="araras">Arara Canindé</option>
+              <option value="canario-da-terra">Canário da Terra</option>
+              <option value="coleirinha">Coleirinha</option>
+              <option value="joao-bobo">João Bobo (1)</option>
+              <option value="joao-bobo2">João Bobo (2)</option>
+              <option value="lavadeira-mascarada">Lavadeira Mascarada</option>
+              <option value="maria-faceira">Maria Faceira</option>
+              <option value="saracura-3-potes">Saracura 3 Potes</option>
+              <option value="soco-dorminhoco">Socó Dorminhoco</option>
+              <option value="tico-tico-rei">Tico Tico Rei</option>
+            </select>  
+            <div id="ctn-check">
+              <button id="btn-check" type="button">Visualizar</button>
+            </div>                   
+          </form>
+          <div id="ctn-card"> 
+            <h2 id="h2-card"></h2>          
+            <img id="img-card">
+          </div>
+        </div>    
+      </section>    
+    </main>
+
+    <script src="page3.js"></script>
+  </body>
+
+</html>
