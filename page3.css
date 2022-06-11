@@ -51,43 +51,48 @@ body:after{
 .exercise{
   width: 90vw;
 }
-#ctn-card{
-  width: 40vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1vh;
-  gap: 1vw;
-}
 
-#frm-inputs{
-  padding-top: 5vh;
-} 
 .ctn-input{
   width: 90vw;
   display: flex;
-  justify-content: left;
+  flex-direction: column;
+  align-items: center;
   padding-top: 1vh;
-  gap: 1vw;
+  gap: 5vh;
 }
-#id-passaro{
-  width: 20vw;
-  padding: 2px;
+#frm-inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.ctn-input span{
-  width: 10vw;
-  text-align: right;
+/* #chat{
+  width: 40vw;
+  height: 30vh;
+} */
+#mensagem{
+  width: 400px;
+  height: 3vh;
 }
-#ctn-check{
-  width: 30vw;
+#ctn-msg{
+  width: 530px;
   display: flex;
   align-items: left;
   padding-top: 2vh;
   gap: 2vw;
 }
-#btn-check{
+#btn-send{
+  width: 106px;
+  height: 3vh;
+  color: #fff;
+  background-color: #787878;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#btn-send:hover{
+  background-color: #78787870;
+  color: #000;
+}
+#btn-clear{
   width: 10vw;
   height: 4vh;
   color: #fff;
@@ -95,27 +100,10 @@ body:after{
   border-radius: 5px;
   cursor: pointer;
 }
-#btn-check:hover{
+#btn-clear:hover{
   background-color: #78787870;
   color: #000;
 }
-#ctn-card{
-  width: 500px;
-  height: 70vh;
-  border-radius: 5px;
-  border: 2px solid #ffa500;
-  gap: 3vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-}
-#h2-card{
-  font-weight: 700;
-  font-size: 16px;
-}
-#img-card{
-  width: 480px;
-  height: 60vh;
-  object-fit: contain;
-  overflow: hidden;
+#sender{
+  color: #008000;
 }
