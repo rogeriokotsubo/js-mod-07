@@ -5,7 +5,6 @@ document.addEventListener("keydown", Validar);
 const chat=document.querySelector("#chat");
 const mensagem=document.querySelector("#mensagem");
 mensagem.focus();
-let scrollY = 0;
 
 function Enviar() {
   const txtMsg= mensagem.value;
@@ -16,8 +15,7 @@ function Enviar() {
         chat.innerHTML += `[`+time+`] Você: ` + txtMsg + `\n\n`;
         mensagem.value = "";
   }
-  scrollY += 10; 
-  chat.scrollTop+=scrollY;
+  chat.scrollTop=chat.scrollHeight;
 }
 
 function Validar(e) {
